@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes playing {
+    from{
+        left: 0;
+    }
+    to{
+        left: 940px;
+        background-color: yellow;
+    }
+}
+@keyframes bounce{
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+        
+    }
+}
+.stage{
+    width: 990px;
+    height: 300px;
+    background-color: rgba(244, 165, 96, 0.548);
+    border: 2px solid sandybrown;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px dotted blue;
+    border-radius: 50px;
+    position: relative;
+    animation: playing 2s 
+    ease-in-out 1s infinite alternate;
+}
