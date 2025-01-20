@@ -4,38 +4,76 @@
     box-sizing: border-box;
 }
 @keyframes playing {
-    from{
+    /* from{
         left: 0;
     }
     to{
-        left: 940px;
+        left: 500px;
+        background-color: yellow;
+    } */
+    0% {
+        left: 0px;
+        top: 0px;
         background-color: yellow;
     }
+    25% {
+        left: 150px;
+        top: 200px;
+        background-color: red;
+    }
+    50% {
+        left: 300px;
+        top: 0px;
+        background-color: gray;
+    }
+    100% {
+        left: 500px;
+        top: 200px;
+        background-color: sienna;
+    }
 }
-@keyframes bounce{
-    0%{
-
+@keyframes bounce {
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: yellow;
     }
-    50%{
-
+    25% {
+        left: 150px;
+        top: 200px;
+        background-color: red;
     }
-    100%{
-        
+    50% {
+        left: 300px;
+        top: 0px;
+        background-color: gray;
+    }
+    100% {
+        left: 500px;
+        top: 200px;
+        background-color: sienna;
     }
 }
-.stage{
-    width: 990px;
+section{
+ margin: 30px 200px;
+}
+
+.stage {
+    width: 600px;
     height: 300px;
     background-color: rgba(244, 165, 96, 0.548);
     border: 2px solid sandybrown;
 }
-.ball{
-    width: 50px;
-    height: 50px;
+
+.ball {
+    width: 100px;
+    height: 100px;
     background-color: white;
     border: 2px dotted blue;
-    border-radius: 50px;
+    border-radius: 50%;
     position: relative;
     animation: playing 2s 
     ease-in-out 1s infinite alternate;
+    /* animation: bounce 3s ease-in-out 1 infinite alternate; */
 }
+
